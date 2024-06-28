@@ -11,8 +11,8 @@ for elem in list:
     elems_to_str = elems_to_str + " " + elem + " "
 
 for elem in elems_to_str:
+    # left the space chars, as they'll be useful to split the words apart afterwards
     if re.search("[^a-z]", elem) and re.search("[^A-Z]", elem) and elem != " ":
-        #left spaces so then to split the words apart and count them
         continue
     else:
         only_letters_str = only_letters_str + elem
